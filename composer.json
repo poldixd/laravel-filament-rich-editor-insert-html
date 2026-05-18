@@ -1,0 +1,57 @@
+{
+  "name": "poldixd/laravel-filament-rich-editor-insert-html",
+  "description": "A Filament rich editor plugin for inserting raw HTML from a modal.",
+  "keywords": [
+    "filament",
+    "html",
+    "laravel",
+    "rich-editor"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://github.com/poldixd/laravel-filament-rich-editor-insert-html",
+  "require": {
+    "php": "^8.2",
+    "filament/forms": "^5.0",
+    "illuminate/support": "^11.0 || ^12.0 || ^13.0"
+  },
+  "require-dev": {
+    "laravel/pint": "^1.19",
+    "orchestra/testbench": "^9.0 || ^10.0 || ^11.0",
+    "pestphp/pest": "^3.0 || ^4.0",
+    "pestphp/pest-plugin-laravel": "^3.0 || ^4.0"
+  },
+  "authors": [
+    {
+      "name": "Nils Poltmann",
+      "email": "dev@nils.li"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "poldixd\\FilamentRichEditorInsertHtml\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "poldixd\\FilamentRichEditorInsertHtml\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "poldixd\\FilamentRichEditorInsertHtml\\FilamentRichEditorInsertHtmlServiceProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/pest"
+  }
+}
