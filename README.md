@@ -5,7 +5,7 @@ A small Filament rich editor plugin that adds an `insertHtml` toolbar button. Th
 ## Requirements
 
 - PHP 8.2 or higher
-- Filament Forms 5.x
+- Filament Forms 5.6 or higher
 - Laravel 11, 12, or 13
 
 ## Installation
